@@ -1,10 +1,10 @@
 {% extends "layout.html" %}
 
 {% block body %}
-    <p>Word counter</p>
+    <p>Word stats</p>
     <form action="/wordCount" method="get">
-        <p>Enter your first number.</p>
-        <input autocomplete="off" autofocus name="string" placeholder="First Number" type="text">
+        <p>Enter your first word.</p>
+        <input autocomplete="off" autofocus name="string" placeholder="Your word" type="text">
         <button type="submit">Get Word Info</button>
     </form>
 
