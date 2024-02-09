@@ -20,7 +20,8 @@ def register():
     averageWordLength = totalCharCount / wordCount
 
     return render_template("wordCount.html", charCount=len(string),
-                           wordCount=wordCount, averageWordLength = averageWordLength)
+                           wordCount=wordCount, averageWordLength=averageWordLength)
+
 
 
 if __name__ == '__main__':
