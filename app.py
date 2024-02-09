@@ -5,13 +5,13 @@ app = Flask(__name__)
 
 @app.route("/", methods=["POST", "GET"])
 def index():  # put application's code here
-    return render_template("index.html", string=string)
+    return render_template("index.html")
 
 
 @app.route("/wordCount", methods=["POST", "GET"])
 def register():
     string = request.form.get("string")
-    return render_template("wordCount.html")
+    return render_template("wordCount.html", string=string)
 
 
 if __name__ == '__main__':

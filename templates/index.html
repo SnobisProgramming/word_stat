@@ -2,12 +2,10 @@
 
 {% block body %}
     <p>This is a poorly made calculator that will only add two numbers.</p>
-    <form action="/sum" method="get">
+    <form action="/wordCount" method="get">
         <p>Enter your first number.</p>
-        <input autocomplete="off" autofocus name="num1" placeholder="First Number" type="text">
-        <p>Enter your second number.</p>
-        <input autocomplete="off" autofocus name="num2" placeholder="Second Number" type="text">
-        <button type="submit">Greet</button>
+        <input autocomplete="off" autofocus name="string" placeholder="First Number" type="text">
+        <button type="submit">Get Word Info</button>
     </form>
 
 {% endblock %}
