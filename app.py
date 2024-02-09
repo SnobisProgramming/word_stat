@@ -10,7 +10,7 @@ def index():  # put application's code here
 
 @app.route("/wordCount", methods=["POST", "GET"])
 def wordCount():
-    string = request.args.get("string")
+    string = request.form.get("string")
     wordCount = len(string.split())
 
     totalCharCount = 0
