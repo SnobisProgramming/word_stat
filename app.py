@@ -11,7 +11,16 @@ def index():  # put application's code here
 @app.route("/wordCount", methods=["POST", "GET"])
 def register():
     string = request.form.get("string")
-    return render_template("wordCount.html", string=string)
+    wordCount = len(string.split())
+
+    totalCharCount = 0
+    for word in string.split(" "):
+        totalCharCount += len(word)
+
+    averageWordLength = totalCharCount / wordCount
+
+    return render_template("wordCount.html", charCount=len(string),
+                           wordCount=wordCount, averageWordLength = averageWordLength)
 
 
 if __name__ == '__main__':
