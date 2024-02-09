@@ -23,6 +23,11 @@ def register():
                            wordCount=wordCount, averageWordLength=averageWordLength)
 
 
+@app.route("/")
+def something():
+    return
+
+
 
 if __name__ == '__main__':
     app.run()
