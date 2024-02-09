@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <p>This is a poorly made calculator that will only add two numbers.</p>
+    <form action="/sum" method="get">
+        <p>Enter your first number.</p>
+        <input autocomplete="off" autofocus name="num1" placeholder="First Number" type="text">
+        <p>Enter your second number.</p>
+        <input autocomplete="off" autofocus name="num2" placeholder="Second Number" type="text">
+        <button type="submit">Greet</button>
+    </form>
+
+{% endblock %}
