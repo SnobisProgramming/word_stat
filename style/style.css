@@ -1,0 +1,26 @@
+.center {
+    text-align: center;
+}
+
+.repad {
+    padding: 5px;
+}
+
+.font1 {
+    font-family: "Arial Black", serif;
+}
+
+.font2 {
+    font-family: "Courier New", serif;
+}
+
+.font3 {
+    font-family: "Comic Sans MS", serif;
+}
+
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
