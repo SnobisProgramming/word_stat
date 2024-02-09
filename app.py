@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["POST", "GET"])
 def index():  # put application's code here
-    return render_template("index.html", string=string)
+    return render_template("index.html")
 
 
 @app.route("/wordCount", methods=["POST", "GET"])
