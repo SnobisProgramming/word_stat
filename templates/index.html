@@ -2,9 +2,9 @@
 
 {% block body %}
     <p>Word counter</p>
-    <form action="/wordCount" method="get">
-        <p>Enter your first number.</p>
-        <input autocomplete="off" autofocus name="string" placeholder="First Number" type="text">
+    <form action="/wordCount" method="post">
+        <p>Enter your Sentance in the Form Below:</p>
+        <input autocomplete="off" autofocus name="string" placeholder="Sentance" type="text">
         <button type="submit">Get Word Info</button>
     </form>
 
